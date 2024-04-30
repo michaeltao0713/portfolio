@@ -13,24 +13,17 @@
 
 </head>
 
-<body style="height:10000px">
+<body>
 	<!-- Navigation Bar -->
-	<!-- Bar will collapse for screens smaller than "lg" -->
-	<nav id="navbar-id" class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed">
+	<!-- Bar will collapse for screens smaller than "lg", fixed to bottom -->
+	<nav id="navbar-id" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
 		<div class="container-fluid">
-			<!-- Main Button -->
-			<a class="navbar-brand" href="#about">
-				<img src="./assets/images/Screenshot 2024-03-30 130401.png" alt="Logo" height="30px" width="30px">
-				Michael Tao
-			</a>
-			<!-- Allows collapsed bar to expand -->
+			<!-- Hamburger menu for smaller width screens -->
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-				aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+				data-bs-target="#navbarSupportedContent"><span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<!-- Content -->
-				<ul class="navbar-nav">
+				<ul class="navbar-nav mx-auto">
 					<li><a class="nav-link" href="#about">About</a></li>
 					<li><a class="nav-link" href="#experience">Experience</a></li>
 					<li><a class="nav-link" href="#projects">Projects</a></li>
@@ -40,48 +33,68 @@
 		</div>
 	</nav>
 
-	<!-- Allows navbar to update current section -->
-	<div data-bs-spy="scroll" data-bs-target="#navbar-id" data-bs-root-margin="0px 0px -40%"
+	<div data-bs-spy="scroll" data-bs-target="#navbar-id" data-bs-root-margin="0px 0px -80%"
 		data-bs-smooth-scroll="true">
-		<!-- Content -->
-		<h4 id="about">About heading</h4>
-		<p>I'm cringe, and that's based, I'm not based and that's not cringe, there's no one I'd rather be... then me.
-			<br><br><br><br><br><br><br><br><br><br><br><br><br>><br><br><br><br><br><br><br><br><br>
-		</p>
-		<h4 id="experience">experience heading</h4>
-		<p>...
-			<br><br><br><br><br><br><br><br><br><br><br><br>><br><br><br><br><br><br><br><br><br>
-		</p>
-		<h4 id="projects">Project heading</h4>
-		<p>...
-			><br><br><br><br><br><br><br><br><br>
-		</p>
-		<h4 id="contact">Contact heading</h4>
-		<p>...</p>
+
+		<section id="about">
+			<div class="section__pic-container">
+				<img src="./assets/images/face.png" class="profile-icon rounded-circle" alt="profile picture">
+			</div>
+			<div class="section__text">
+				<p class="section__text__p1">Hello, I'm</p>
+				<h1 class="title">Michael Tao</h1>
+				<p class="section_text_p2">some guy</p>
+				<div class="btn-container">
+					<a class="btn btn-color-1" onclick="window.open('./assets/resumes/Spring_24_Back.pdf')">Download CV</a>
+					<a class="btn btn-color-2" href="https://github.com/michaeltao0713" target="_blank">GitHub</a>
+					<a class="btn btn-color-3" href="https://www.linkedin.com/in/michael-tao-890256221/" target="_blank">LinkedIn</a>
+				</div>
+
+
+
+
+
+			</div>
+
+
+		</section>
+
+
+		<div>
+			<h1 id="about">About heading</h1>
+			<p style="margin-top: 600px">I'm cringe, and that's based, I'm not based and that's not cringe, there's no
+				one I'd rather be... then me.
+
+			</p>
+		</div>
+
+		<div>
+			<h1 id="experience">experience heading</h1>
+			<p>...
+				<br><br><br><br><br><br><br><br><br><br><br><br>><br><br><br><br><br><br><br><br><br>
+			</p>
+		</div>
+
+		<div>
+			<h1 id="projects">Project heading</h1>
+			<p>...
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			</p>
+		</div>
+
+		<div>
+			<h1 id="contact">Contact heading</h1>
+			<p>...</p>
+		</div>
 	</div>
 
-	<!-- <div class="circle"></div>
 
-	<a class="nav-link" href="./pages/projects.html">Projects</a>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<div id="follow"><img src="https://placekitten.com/96/140" /><br>Kitteh</br>
-	</div>
-	<script>
-		$(document).mousemove(function (e) {
-			$("#follow").css({
-				left: e.pageX,
-				top: e.pageY
-			});
-		});
-
-	</script> -->
 
 
 	<!-- Scripts -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 		crossorigin="anonymous"></script>
-
+	<script src="./scripts/script.js"></script>
 
 </body>
 
